@@ -1,42 +1,110 @@
-*{
+* {
     margin: 0;
+    font-family: cursive;
 }
 
-header{
-    width: 100vw;
-    height: 100px;
-    background-color: grey;
-    display: flex;
-    justify-content: center;
-    
+body {
+    background-color: gainsboro;
 }
-header h1{
-    font-weight: 100;
-}
-main{
-    display: flex;
-    margin-top: 15px;
-}
-#sec1{
-    width: 60%;
-    text-align: center;
-}
-#sec2{
-    width: 30%;
-    text-align: center;
-}
-table{
+
+.tabela {
     border: 1px solid black;
+    margin: 5px;
     border-collapse: collapse;
-    width: 200px;
-    height: 300px;
 }
-tbody th{
-    border: 2px solid black;
+
+th,
+td {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
 }
-#sec1 div{
+
+header {
+    background-color: darkgrey;
+    width: 100%;
+    min-height: 10vh;
+    height: auto;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sorteado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(197, 197, 197);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    margin: 5px;
+}
+
+main {
+    display: flex;
+    margin-top: 10px;
+}
+
+main #sec1 {
+    height: auto;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main #sec2 {
+    height: auto;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#bingo {
+    flex-wrap: wrap;
     display: flex;
 }
-div table{
-    margin-left: 2px;
+
+#sorteados {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+button#btnCriarCartela {
+    background-color: aquamarine;
+}
+
+button#reset {
+    background-color: tomato
+}
+
+button#botaoJogar {
+    background-color: mediumspringgreen;
+}
+
+button#btnCriarCartela:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
+
+button#reset:hover {
+    background-color: crimson;
+    cursor: pointer;
+}
+
+button#botaoJogar:hover {
+    background-color: palegreen;
+    cursor: pointer;
 }
